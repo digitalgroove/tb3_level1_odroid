@@ -1,0 +1,10 @@
+<launch>
+	<include file= "$(find tb3_bringup)/launch/turtlebot3_core.launch"/>
+
+	<node pkg="joy" type="joy_node" name="joystick" output="screen"/>
+
+	<node pkg="tb3_teleop" type="teleop.py" name="joy2cmd_vel"/>
+
+    <!-- node pkg="  " type="  " name="  " args="  "/ -->
+
+</launch>
